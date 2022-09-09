@@ -6,12 +6,12 @@ int main()
     std::cout << "Number of Games : ";
     std::cin >> number_attempts;
 
-    for (int i = 0; i <= number_attempts - 1; i++)
+    for (int i = 1; i <= number_attempts; i++)
     {
         unsigned int number;
         std::cout << "Please enter a number : ";
         std::cin >> number;
-        std::cout << "Gameround: " << i + 1 << std::endl;
+        std::cout << "Gameround: " << i << std::endl;
 
 
         if (number >= 0 && number <= 10)
