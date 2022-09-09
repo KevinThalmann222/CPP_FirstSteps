@@ -16,7 +16,7 @@ int main()
 
         if (number >= 0 && number <= 10)
         {
-            if (i == 3)
+            if (i == number_attempts)
             {
                 std::cout << "GAMEOVER" << std::endl;
                 break;
@@ -34,7 +34,7 @@ int main()
             else
             {
                 std::cout << number << " is the wrong number" << std::endl;
-                std::cout << "you have only " << 3 - i << " tries left" << std::endl;
+                std::cout << "you have only " << number_attempts - i << " tries left" << std::endl;
                 std::cout << "---------------------------------------" << std::endl;
             }
         }
